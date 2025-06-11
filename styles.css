@@ -1,20 +1,42 @@
 body {
-    background-color: #020C1B;
-    color: #EAEAEA;
-    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     transition: background-color 0.5s, color 0.5s;
 }
 .dark-mode {
-    background-color: #EAEAEA;
-    color: #020C1B;
+    background-color: #181828;
+    color: #eaeaea;
 }
 .hero {
     text-align: center;
-    padding: 50px;
-    animation: fadeIn 1.5s ease-in-out;
+    padding: 60px 20px 30px 20px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 32px;
 }
-.hero h1 {
+.short-intro {
+    font-size: 1.1rem;
+    margin: 16px 0 12px 0;
     color: #6A0DAD;
+}
+.resume-btn {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    padding: 10px 24px;
+    background: #6A0DAD;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.resume-btn:hover {
+    background: #00FFFF;
+    color: #222;
 }
 .social-links a {
     color: #00FFFF;
@@ -24,76 +46,203 @@ body {
     transition: color 0.3s;
 }
 .social-links a:hover {
-    color: #FF1493;
+    color: #6A0DAD;
 }
-.about, .projects, .blog, .contact {
-    text-align: center;
-    padding: 20px;
-    animation: fadeInUp 1.5s ease-in-out;
+.about {
+    background: #fff;
+    border-radius: 16px;
+    margin: 0 auto 32px auto;
+    max-width: 900px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-.project-list .project {
-    background-color: #6A0DAD;
-    padding: 15px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.brief-intro {
+    font-size: 1rem;
+    margin-bottom: 24px;
+    color: #333;
 }
-.project:hover {
-    transform: scale(1.05);
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+    justify-content: space-between;
 }
-.project a {
-    color: #e61ba2;
+.skills-category {
+    flex: 1 1 220px;
+    min-width: 200px;
+}
+.skills-category h4 {
+    color: #6A0DAD;
+    margin-bottom: 10px;
+}
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.skill img {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+.skill span {
+    flex: 0 0 90px;
+    font-weight: 500;
+}
+.progress-bar {
+    background: #eaeaea;
+    height: 8px;
+    border-radius: 4px;
+    flex: 1;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.progress {
+    background: linear-gradient(90deg, #6A0DAD, #00FFFF);
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s;
+}
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.about-card {
+    background: #f3f3fa;
+    border-radius: 8px;
+    padding: 16px 20px;
+    flex: 1 1 220px;
+    min-width: 180px;
+    box-shadow: 0 1px 4px rgba(106,13,173,0.04);
+    color: #333;
+}
+.projects {
+    max-width: 1100px;
+    margin: 0 auto 32px auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 24px;
+}
+.project-card {
+    background: #f3f3fa;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(106,13,173,0.06);
+    padding: 20px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(0,255,255,0.10);
+}
+.project-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: #eaeaea;
+}
+.project-card h3 {
+    margin: 0 0 8px 0;
+    color: #6A0DAD;
+    font-size: 1.1rem;
+}
+.project-card p {
+    font-size: 0.97rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.tech-badges span {
+    background: #6A0DAD;
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.project-card a {
+    margin-top: auto;
+    color: #00FFFF;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.2s;
 }
-.project a:hover {
-    color: #ce0581;
+.project-card a:hover {
+    color: #6A0DAD;
 }
-.contact form input, .contact form textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #00FFFF;
-    background-color: #020C1B;
-    color: #EAEAEA;
-    transition: background-color 0.3s;
+@media (max-width: 900px) {
+    .skills-grid, .about-cards {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .projects, .about {
+        padding: 18px 6px;
+    }
 }
-.contact form input:focus, .contact form textarea:focus {
-    background-color: #6A0DAD;
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero {
+        padding: 32px 6px 18px 6px;
+    }
 }
-.contact form button {
-    background-color: #6A0DAD;
-    color: #EAEAEA;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 12px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
 }
-.contact form button:hover {
-    background-color: #FF1493;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.navbar li {
+    margin: 0;
 }
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+.navbar a {
+    color: #6A0DAD;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
 }
-.toggle-theme {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: #6A0DAD;
-    color: #EAEAEA;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.navbar a:hover {
+    background: #00FFFF;
+    color: #222;
 }
-.toggle-theme:hover {
-    background-color: #FF1493;
+.contact {
+    margin-bottom: 48px;
 }

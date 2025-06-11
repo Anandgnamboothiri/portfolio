@@ -6,14 +6,25 @@
     <title>Anand G. Namboothiri | AI Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    
 </head>
 <body>
     <button class="toggle-theme" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <button id="back-to-top" class="back-to-top">Back to Top</button>
+    
     <header class="hero">
         <h1>Anand G. Namboothiri</h1>
-        <p>Building Intelligent Vision Systems with AI</p>
+        <p class="short-intro">I'm a passionate AI and Data Science student with hands-on experience in machine learning, computer vision, and full-stack web development. I love building real-world solutions using Python, OpenCV, and modern frameworks while continuously learning and evolving in the tech world.</p>
+        <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
         <div class="social-links">
             <a href="https://github.com/Anandgnamboothiri" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/anand-namboothiri-04bb392a5/" target="_blank">LinkedIn</a>
@@ -21,57 +32,132 @@
         </div>
     </header>
 
-    <section class="about">
+    <section id="about" class="about">
         <h2>About Me</h2>
-        <p>I am Anand G. Namboothiri, an aspiring AI & Computer Vision Engineer with a passion for building intelligent vision systems. With expertise in Python, TensorFlow, OpenCV, and Deep Learning, I specialize in developing AI-powered applications that bridge the gap between technology and human interaction.
-
-            I have successfully implemented projects like Hand Gesture Recognition, Face Recognition, and Sentiment Analysis, focusing on real-world AI applications. I thrive on solving challenging problems and continuously learning to push the boundaries of AI innovation.
-            
-            Skills & Expertise:
-             Programming: Python, Java, JavaScript
-             AI & ML Frameworks: TensorFlow, OpenCV, MediaPipe
-             Web Technologies: HTML, CSS, React
-             Databases: SQL, MongoDB
-             Cloud & DevOps: AWS, Docker, Git
-            
-            What I Do:
-             AI Research & Development - Building AI-driven solutions for real-world applications.
-             Computer Vision Systems - Creating intelligent systems that interpret images and videos.
-             Machine Learning & Data Analysis - Analyzing and predicting trends using AI.
-            
-            Why Work With Me?
-             Problem Solver - I love breaking down complex problems into smart AI-driven solutions.
-             Fast Learner - Always staying updated with the latest AI trends and technologies.
-             Passionate & Dedicated - Committed to innovation and building impactful projects.</p>
-    </section>
-
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Hand Gesture Recognition</h3>
-                <p>AI-powered system for gesture-based interaction.   Created a PPT controlling system by hand gestures, used opencv, mediapipe, pyautogui, random forest classification algorithm etc. By using this system people can easily control PPT’s just by hand gestures.</p>
-                <a href="https://github.com/Anandgnamboothiri/Guesture-control-presntation-system" >Hand Gesture Recognition</a>
-                
+        <p class="brief-intro">I'm Anand G. Namboothiri, a B.Tech student specializing in Artificial Intelligence and Data Science, currently in my third year. I'm deeply passionate about solving real-world problems using AI, machine learning, and computer vision technologies. My journey includes creating gesture-controlled systems, sentiment analysis tools, and sign language translators — all built using tools like Python, OpenCV, TensorFlow, and Mediapipe.<br><br>Alongside AI, I've also explored web development and contributed to real projects as an intern, including building a website for Maya Labs. I believe in learning by doing and continuously challenge myself through hackathons, tech events, and workshops. I thrive in team environments, adapt quickly to challenges, and am always excited to turn innovative ideas into impactful solutions.</p>
+        <h3>Skills</h3>
+        <div class="skills-grid">
+            <div class="skills-category">
+                <h4>Languages</h4>
+                <div class="skill"><img src="icons/python.svg" alt="Python"/><span>Python</span><div class="progress-bar"><div class="progress" style="width: 90%"></div></div></div>
+                <div class="skill"><img src="icons/javascript.svg" alt="JavaScript"/><span>JavaScript</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+                <div class="skill"><img src="icons/java.svg" alt="Java"/><span>Java</span><div class="progress-bar"><div class="progress" style="width: 70%"></div></div></div>
             </div>
-            <div class="project">
-                <h3>Devoloped an website </h3>
-                <p>Devolopedan website for the company where i done my intership, which help me in mastering HTML, CSS, JavaScript. As we know these are the base of web devoloping</p>
+            <div class="skills-category">
+                <h4>Frameworks & Libraries</h4>
+                <div class="skill"><img src="icons/tensorflow.svg" alt="TensorFlow"/><span>TensorFlow</span><div class="progress-bar"><div class="progress" style="width: 85%"></div></div></div>
+                <div class="skill"><img src="icons/opencv.svg" alt="OpenCV"/><span>OpenCV</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+                <div class="skill"><img src="icons/mediapipe.svg" alt="MediaPipe"/><span>MediaPipe</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div></div>
+                <div class="skill"><img src="icons/react.svg" alt="React"/><span>React</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div></div>
             </div>
-            <div class="project">
-                <h3>Sentiment Analysis</h3>
-                <p>AI-driven analysis of text sentiment. Through this project i used an review dataset of a amazon product andanalysed howmany of the reviews where good, nutral, bad. This analysis help in making the company more productive</p>
-                <a href="https://github.com/Anandgnamboothiri/sentimental-analysis-using-python" >Sentimental analysis</a>
+            <div class="skills-category">
+                <h4>Tools & Platforms</h4>
+                <div class="skill"><img src="icons/aws.svg" alt="AWS"/><span>AWS</span><div class="progress-bar"><div class="progress" style="width: 60%"></div></div></div>
+                <div class="skill"><img src="icons/docker.svg" alt="Docker"/><span>Docker</span><div class="progress-bar"><div class="progress" style="width: 65%"></div></div></div>
+                <div class="skill"><img src="icons/git.svg" alt="Git"/><span>Git</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+            </div>
+        </div>
+        <h3>Education & Certifications</h3>
+        <div class="about-cards">
+            <div class="about-card">
+                <strong>B.Tech in Artificial Intelligence & Data Science</strong><br>
+                Sasurie College of Engineering, Vijayamangalam<br>
+                GPA: 7.9<br>
+                Graduation: 2026
+            </div>
+            <div class="about-card">
+                <strong>12th (HSC)</strong><br>
+                CHMHSS Pookalathur, Malappuram<br>
+                Percentage: 92%<br>
+                Graduation: 2022
+            </div>
+            <div class="about-card">
+                <strong>10th (HSS)</strong><br>
+                CHMHSS Pookalathur, Malappuram<br>
+                Percentage: 95%<br>
+                Graduation: 2020
+            </div>
+            <div class="about-card">
+                <strong>Certifications</strong><br>
+                NPTEL – Cloud Computing<br>
+                INFOSYS – Computer Vision<br>
+                INFOSYS – Fundamentals of AI & ML<br>
+                Great Learning – Fundamentals of Python<br>
+                Forage – Cloud Platform Job Simulation<br>
+                Microsoft – Fundamentals of Facial Recognition<br>
+                Microsoft – Fundamentals of ML<br>
+                Microsoft – Fundamentals of Azure AI Services<br>
+                Microsoft – Fundamentals of Computer Vision
+            </div>
+        </div>
+        <h3>Professional Experience</h3>
+        <div class="about-cards">
+            <div class="about-card">
+                <strong>AI Intern</strong><br>
+                Maya Labs<br>
+                Duration: 31-Sept-2024 to Ongoing<br>
+                Learned about web development, conducted research on automated navigation systems, and worked with intermediate-level computer vision algorithms. Created a website during this period.
+            </div>
+        </div>
+        <h3>Achievements</h3>
+        <div class="about-cards">
+            <div class="about-card">
+                <strong>Activities & Achievements</strong><br>
+                Participated in workshop at NIT Calicut<br>
+                Participated in a bootcamp conducted by Google<br>
+                Participated in Google Solution Challenge Hackathon<br>
+                Participated in several tech events at other colleges including PPT presentation, workshops, hackathons, etc.
             </div>
         </div>
     </section>
 
-    <section class="blog">
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/gesture-control.png" alt="Gesture Control Presentation System"/>
+                <h3>Gesture Control Presentation System</h3>
+                <p>Gesture-based system to control presentations using real-time webcam input. Built with Python, OpenCV, MediaPipe.</p>
+                <div class="tech-badges"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div>
+                <a href="https://github.com/Anandgnamboothiri/Guesture-control-presntation-system" target="_blank">View Code</a>
+            </div>
+            <div class="project-card">
+                <img src="images/portfolio.png" alt="Portfolio"/>
+                <h3>Portfolio</h3>
+                <p>Personal portfolio website built with HTML, CSS, and JavaScript. Showcases projects and skills.</p>
+                <div class="tech-badges"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://github.com/Anandgnamboothiri/portfolio" target="_blank">View Code</a>
+            </div>
+            <div class="project-card">
+                <img src="images/sentiment-analysis.png" alt="Sentiment Analysis using Python"/>
+                <h3>Sentiment Analysis using Python</h3>
+                <p>Mini project for analyzing product reviews using Python. Determines positive, negative, or neutral sentiment.</p>
+                <div class="tech-badges"><span>Python</span><span>Pandas</span></div>
+                <a href="https://github.com/Anandgnamboothiri/sentimental-analysis-using-python" target="_blank">View Code</a>
+            </div>
+            <div class="project-card">
+                <img src="images/opencv-learnings.png" alt="OpenCV Learnings"/>
+                <h3>OpenCV Learnings</h3>
+                <p>Learning path and tasks to master OpenCV for computer vision applications.</p>
+                <div class="tech-badges"><span>Python</span><span>OpenCV</span></div>
+                <a href="#" target="_blank">View Code</a>
+            </div>
+            <div class="project-card">
+                <img src="images/ml-classification.png" alt="Learned ML Classification Model"/>
+                <h3>Learned ML Classification Model</h3>
+                <p>Flask app for iris flower classification using multiple ML models. Built with Python and Flask.</p>
+                <div class="tech-badges"><span>Python</span><span>Flask</span></div>
+                <a href="#" target="_blank">View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
         <h2>Blog</h2>
         <p>Coming soon...</p>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <form>
             <input type="text" placeholder="Your Name" required>
